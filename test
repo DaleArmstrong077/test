@@ -1,0 +1,31 @@
+agenda = {}
+
+def add_event():
+    event = input("Enter the name of the event: ")
+    date = input("Enter the date of the event: ")
+    agenda[date] = event
+    print("Event added successfully!")
+
+def view_agenda():
+    print("Agenda:")
+    for date, event in agenda.items():
+        print(date + ": " + event)
+
+while True:
+    print("\n------ Agenda Menu ------")
+    print("1. Add Event")
+    print("2. View Agenda")
+    print("3. Exit")
+    
+    choice = input("\nEnter your choice (1-3): ")
+
+    if choice == "1":
+        add_event()
+    elif choice == "2":
+        view_agenda()
+    elif choice == "3":
+        break
+    else:
+        print("Invalid choice. Please try again.")
+
+print("\nThank you for using the agenda program!")

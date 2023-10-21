@@ -1,4 +1,4 @@
-agenda = {}
+1 agenda = {}
 
 def add_event():
     event = input("Enter the name of the event: ")
